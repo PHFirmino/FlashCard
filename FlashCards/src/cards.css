@@ -1,0 +1,40 @@
+
+.flashcard-container:hover .flashcard {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard-container, .question, .answer {
+    width:15vw;
+    height:18vw;
+    margin: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .flashcard {
+      transition: 0.5s;
+      transform-style: preserve-3d;
+  }
+  
+  .question {
+      z-index: 5;
+  }
+  
+  .answer {
+      transform: rotateY(180deg);
+  }
+  
+  .question, .answer{
+    backface-visibility: hidden;
+    border:2px solid rgb(228 228 231);
+    border-radius:10px 10px;
+    margin:auto;
+    text-align:center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+  .content{
+    padding: 10px;
+  }
+  
